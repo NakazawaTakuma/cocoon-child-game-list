@@ -1,4 +1,4 @@
-# Cocoon Child – Game List
+# Cocoon Child – Game Detail
 
 ## 概要
 
