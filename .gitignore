@@ -1,0 +1,22 @@
+# WordPress 本体や Cocoon 親テーマは含めない
+wp-admin/
+wp-includes/
+
+# OS やエディタの一時ファイル
+.DS_Store
+Thumbs.db
+
+# Node.js / Composer の依存フォルダ（もし使っていれば）
+node_modules/
+vendor/
+
+# IDE / エディタの設定ファイル
+.idea/
+.vscode/
+
+# 不要なログ・キャッシュ
+*.log
+.cache/
+
+# .env ファイル（APIキーを環境変数で管理している場合）
+.env

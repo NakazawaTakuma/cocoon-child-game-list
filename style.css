@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/*
+Theme Name:   Cocoon Child – Game List
+Theme URI:    https://github.com/NakazawaTakuma/cocoon-child-game-list
+Author:       Nakazawa
+Author URI:   https://github.com/NakazawaTakuma
+Description:  Cocoon テーマの子テーマ。固定ページテンプレート「Game Detail」を追加し、
+              ゲーム情報を取得して詳細表示する機能を持つ。
+Version:      1.0.0
+Template:     cocoon-master   
+Text Domain:  cocoon-child-game-list
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1023px以下*/
+@media screen and (max-width: 1023px) {
+}
+
+/*834px以下*/
+@media screen and (max-width: 834px) {
+}
+
+/*480px以下*/
+/* @media screen and (max-width: 480px){
+   .igdb-game-card {
+    transform: scale(0.73);
+} */
+
+/* @media screen and (max-width: 480px) {
+  .igdb-game-card {
+    transform: scale(calc(100vw / 470));
+    transform-origin: top center;
+  }
+}
+ */
+
+.blogcard {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.blogcardb {
+  line-height: 1;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  word-wrap: break-word;
+  margin: 40px;
+  padding: 10px;
+}
+
+.blogcardb::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.blogcardb.ex {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+.blogcardb a {
+  text-decoration: none;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.blogcardb a:hover {
+  opacity: 0.6;
+}
+.blogcardb_thumbnail {
+  float: left;
+  padding: 10px;
+}
+.blogcardb_title {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 17px 20px 10px;
+}
+.blogcardb_excerpt {
+  font-size: 0.85em;
+  line-height: 1.6;
+  padding: 0 17px 15px 20px;
+}
+.blogcardb_link {
+  font-size: 0.65em;
+  padding: 0 17px 15px 20px;
+  text-align: left;
+}
+.blogcardb_link .favicon {
+  margin-bottom: -4px;
+}
+.blogcardb_link .icon-external-link-alt::before {
+  font-size: 0.75em;
+}
+
+.blogcardb_thumbnail img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .blogcardb {
+    margin: 40px 0;
+  }
+  .blogcardb_thumbnail img {
+    width: 90px;
+  }
+  .blogcardb_title {
+    font-size: 0.95em;
+    padding-bottom: 17px;
+  }
+  .blogcardb_excerpt {
+    display: none;
+  }
+}

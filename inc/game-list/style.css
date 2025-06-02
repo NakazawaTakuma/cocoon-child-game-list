@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+.release-btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.igdb-game-card {
+  width: 480px;
+  max-width: 480px;
+}
+
+.cover-thumb2 {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .igdb-game-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 95vw;
+  }
+  .cover-thumb {
+    display: none;
+  }
+
+  .cover-thumb2 {
+    display: block !important;
+  }
+}
+
+/* スライダー (Webkit) */
+#hypes-slider {
+  -webkit-appearance: none;
+  width: 400px;
+  height: 10px;
+  border-radius: 5px;
+  outline: none;
+  background-image: linear-gradient(
+    to right,
+    #e0e0e0 0%,
+    #e0e0e0 0%,
+    #ffb83c 0%,
+    #ffb83c 100%
+  );
+}
+#hypes-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffb83c;
+  cursor: pointer;
+}
+/* Firefox 用 */
+#hypes-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffb83c;
+  cursor: pointer;
+}
+
+/* PC表示など通常時 */
+.dlc-game-list {
+  display: flex;
+  flex-wrap: nowrap; /* 折り返さずに横並び */
+  overflow-x: auto; /* 横スクロールを有効化 */
+  -webkit-overflow-scrolling: touch; /* iOS用のスムーズスクロール */
+  gap: 10px;
+}
+
+.dlc-game-card {
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+#goods-slides {
+  display: flex;
+  flex-wrap: nowrap; /* 折り返さずに横並び */
+  overflow-x: auto; /* 横スクロールを有効化 */
+  -webkit-overflow-scrolling: touch; /* iOS用のスムーズスクロール */
+  gap: 10px;
+}
+
+.goods-card {
+  width: 250px;
+  max-width: 250px;
+  min-width: 200px;
+  box-sizing: border-box;
+  flex-shrink: 0; /* 幅が縮小されないように */
+}
+
+.goods-card h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+   -webkit-line-clamp: 5; /* 最大3行まで表示 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 必要に応じて、行の高さなども設定できます */
+}
